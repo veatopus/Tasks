@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class FirstOne {
 
-    public static int[] invoke(int[] args) {
+    public int[] deleteZeroAddOne(int[] args) {
         int elementsCount =
                 args.length
                         - (int) Arrays.stream(args).filter(n -> n == 0).count()
@@ -23,6 +23,11 @@ public class FirstOne {
         }
 
         return result;
+    }
+
+
+    public void invoke(int[] args) {
+        System.out.println(Arrays.toString(deleteZeroAddOne(args)));
     }
 
 }
